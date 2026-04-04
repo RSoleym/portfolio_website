@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramtin Soleymani | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio website for Ramtin Soleymani featuring hardware, FPGA, and digital design projects."
+    />
+    <meta name="theme-color" content="#C4C5BA" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-accent" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top">Ramtin Soleymani</a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#about">About Me</a>
+          <a href="#projects">Highlighted Projects</a>
+          <a href="#accomplishments">Accomplishments</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a
+            class="icon-link"
+            href="#"
+            aria-label="LinkedIn"
+            title="Replace this LinkedIn link in index.html"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A2 2 0 1 0 5.3 7a2 2 0 0 0-.05-4Zm15.19 9.86c0-3.45-1.84-5.06-4.3-5.06-1.98 0-2.87 1.09-3.37 1.86V8.5H9.4c.05.77 0 11.5 0 11.5h3.37v-6.42c0-.34.03-.68.12-.92.27-.68.9-1.38 1.96-1.38 1.38 0 1.94 1.04 1.94 2.57V20h3.38v-7.14Z"
+              />
+            </svg>
+          </a>
+          <a
+            class="icon-link"
+            href="https://github.com/RSoleym"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.91-2.78.62-3.37-1.21-3.37-1.21-.46-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.09 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.06A9.2 9.2 0 0 1 12 6.82c.85 0 1.72.12 2.53.35 1.91-1.33 2.75-1.06 2.75-1.06.55 1.42.2 2.47.1 2.73.64.72 1.03 1.64 1.03 2.77 0 3.96-2.34 4.82-4.58 5.08.36.32.69.95.69 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.6.69.49A10.28 10.28 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"
+              />
+            </svg>
+          </a>
+          <a class="resume-button" href="resume.html">Resume</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-image-card fade-in-up">
+            <img
+              src="assets/profile-placeholder.svg"
+              alt="Replace this placeholder with your portrait photo"
+            />
+          </div>
+
+          <div class="hero-copy fade-in-up delay-1">
+            <p class="eyebrow">Portfolio</p>
+            <h1>My name is Ramtin Soleymani.</h1>
+            <p class="hero-text">
+              I am an Electrical Engineering student focused on RTL design,
+              FPGA implementation, digital verification, and computer
+              architecture.
+            </p>
+            <div class="hero-buttons">
+              <a class="primary-button" href="#contact">Contact Me</a>
+              <a class="secondary-button" href="#projects">View Projects</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container section-content fade-in-up">
+          <div class="section-heading">
+            <p class="eyebrow">About Me</p>
+            <h2>Building hardware projects from architecture to validation.</h2>
+          </div>
+          <div class="about-grid">
+            <p>
+              I enjoy designing digital systems that are clean, testable, and
+              practical to implement on real hardware. My interests are centred
+              around RTL design, verification, FPGA bring-up, timing-aware
+              design, and microarchitecture.
+            </p>
+            <p>
+              This website is a simple space to highlight the projects, design
+              choices, and technical work I care most about. You can use it as a
+              starting point and swap the text, links, resume, and profile image
+              with your final versions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container fade-in-up">
+          <div class="section-heading">
+            <p class="eyebrow">Highlighted Projects</p>
+            <h2>Selected work across hardware, embedded systems, and software.</h2>
+          </div>
+
+          <div class="card-grid projects-grid">
+            <article class="project-card">
+              <div class="card-tag">SystemVerilog • FPGA</div>
+              <h3>32-bit Multi-Cycle CPU</h3>
+              <p>
+                A custom multi-cycle CPU with Harvard-style memory, control FSM,
+                arithmetic and branching support, and board-level bring-up on
+                FPGA.
+              </p>
+              <a href="#contact">Add case study</a>
+            </article>
+
+            <article class="project-card">
+              <div class="card-tag">UVM • Verification</div>
+              <h3>FPGA Stopwatch</h3>
+              <p>
+                A stopwatch built with debounced inputs, modular RTL blocks, and
+                structured verification to validate counter and display
+                behaviour.
+              </p>
+              <a href="#contact">Add case study</a>
+            </article>
+
+            <article class="project-card">
+              <div class="card-tag">Embedded C/C++</div>
+              <h3>Embedded Media Centre</h3>
+              <p>
+                A Cortex-M3 project featuring an LCD UI, media controls, and
+                interactive games, with an emphasis on embedded system design and
+                user interaction.
+              </p>
+              <a href="#contact">Add case study</a>
+            </article>
+
+            <article class="project-card">
+              <div class="card-tag">Full-Stack</div>
+              <h3>AI Role Matcher</h3>
+              <p>
+                A resume-to-job matching platform that combines OCR, filtering,
+                vector similarity, and a cloud-based workflow for searching and
+                ranking roles.
+              </p>
+              <a href="#contact">Add case study</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="accomplishments">
+        <div class="container fade-in-up">
+          <div class="section-heading">
+            <p class="eyebrow">Accomplishments</p>
+            <h2>Work and project milestones worth highlighting.</h2>
+          </div>
+
+          <div class="card-grid accomplishments-grid">
+            <article class="info-card">
+              <h3>Hydro One Co-op</h3>
+              <p>
+                Supported engineering work, coordination, and technical tracking
+                while contributing to a fast-moving utility environment.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Technical Reporting</h3>
+              <p>
+                Wrote a 20-page IEEE-style report analysing design, safety, cost,
+                and grounding tradeoffs for solar farm placement near HV lines.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Timing Closure</h3>
+              <p>
+                Iterated on RTL and implementation decisions to move hardware
+                designs toward stable FPGA timing and cleaner integration.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Verification Focus</h3>
+              <p>
+                Used structured testbenches, assertions, and debugging to build
+                confidence in functional correctness before hardware deployment.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-panel fade-in-up">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s connect.</h2>
+            <p>
+              Replace the contact details below with your final public links. The
+              GitHub link is already set, and the LinkedIn icon in the header is
+              ready for your profile URL.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:soleymani.ramtin@gmail.com">soleymani.ramtin@gmail.com</a>
+            <a href="https://github.com/RSoleym" target="_blank" rel="noreferrer"
+              >github.com/RSoleym</a
+            >
+            <a href="#top">Back to top</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Ramtin Soleymani</p>
+        <p>Built with HTML, CSS, and vanilla JavaScript.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

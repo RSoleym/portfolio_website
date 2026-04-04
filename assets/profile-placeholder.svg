@@ -1,0 +1,10 @@
+<svg width="900" height="1040" viewBox="0 0 900 1040" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1040" fill="#25242A"/>
+  <rect x="44" y="44" width="812" height="952" fill="#302F35" stroke="#4A4952" stroke-width="2"/>
+  <circle cx="450" cy="360" r="122" fill="#C4C5BA" fill-opacity="0.18"/>
+  <path d="M450 258C414.7 258 386 286.7 386 322C386 357.3 414.7 386 450 386C485.3 386 514 357.3 514 322C514 286.7 485.3 258 450 258Z" fill="#C4C5BA"/>
+  <path d="M281 684C281 587.35 359.35 509 456 509H444C540.65 509 619 587.35 619 684V717H281V684Z" fill="#C4C5BA"/>
+  <rect x="164" y="794" width="572" height="70" rx="35" fill="#C4C5BA" fill-opacity="0.15"/>
+  <text x="450" y="833" text-anchor="middle" fill="#F3F3EF" font-family="Arial, Helvetica, sans-serif" font-size="36" letter-spacing="2">REPLACE WITH YOUR PHOTO</text>
+  <text x="450" y="908" text-anchor="middle" fill="#B7B3A9" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="1">assets/profile-placeholder.svg</text>
+</svg>
