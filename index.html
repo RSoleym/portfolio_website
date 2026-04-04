@@ -6,7 +6,7 @@
     <title>Ramtin Soleymani | Portfolio</title>
     <meta
       name="description"
-      content="Portfolio website for Ramtin Soleymani featuring hardware, FPGA, and digital design projects."
+      content="Portfolio website for Ramtin Soleymani featuring RTL, FPGA, verification, and computer architecture projects."
     />
     <meta name="theme-color" content="#C4C5BA" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,9 +47,10 @@
         <div class="header-actions">
           <a
             class="icon-link"
-            href="#"
+            href="https://www.linkedin.com/in/ramtin-soleymani/"
+            target="_blank"
+            rel="noreferrer"
             aria-label="LinkedIn"
-            title="Replace this LinkedIn link in index.html"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path
@@ -80,8 +81,8 @@
         <div class="container hero-grid">
           <div class="hero-image-card fade-in-up">
             <img
-              src="assets/profile-placeholder.svg"
-              alt="Replace this placeholder with your portrait photo"
+              src="assets/ramtin-profile.jpg"
+              alt="Portrait of Ramtin Soleymani"
             />
           </div>
 
@@ -89,9 +90,8 @@
             <p class="eyebrow">Portfolio</p>
             <h1>My name is Ramtin Soleymani.</h1>
             <p class="hero-text">
-              I am an Electrical Engineering student focused on RTL design,
-              FPGA implementation, digital verification, and computer
-              architecture.
+              I am an Electrical Engineering student focused on RTL design, FPGA
+              implementation, digital verification, and computer architecture.
             </p>
             <div class="hero-buttons">
               <a class="primary-button" href="#contact">Contact Me</a>
@@ -105,20 +105,16 @@
         <div class="container section-content fade-in-up">
           <div class="section-heading">
             <p class="eyebrow">About Me</p>
-            <h2>Building hardware projects from architecture to validation.</h2>
+            <h2>Hardware design with clean implementation and verification.</h2>
           </div>
           <div class="about-grid">
             <p>
-              I enjoy designing digital systems that are clean, testable, and
-              practical to implement on real hardware. My interests are centred
-              around RTL design, verification, FPGA bring-up, timing-aware
-              design, and microarchitecture.
+              I build hardware projects from architecture and RTL through
+              verification, timing-aware iteration, and FPGA bring-up.
             </p>
             <p>
-              This website is a simple space to highlight the projects, design
-              choices, and technical work I care most about. You can use it as a
-              starting point and swap the text, links, resume, and profile image
-              with your final versions.
+              This portfolio highlights a few projects that show how I approach
+              design tradeoffs, implementation details, and validation.
             </p>
           </div>
         </div>
@@ -128,52 +124,101 @@
         <div class="container fade-in-up">
           <div class="section-heading">
             <p class="eyebrow">Highlighted Projects</p>
-            <h2>Selected work across hardware, embedded systems, and software.</h2>
+            <h2>Selected projects.</h2>
           </div>
 
           <div class="card-grid projects-grid">
             <article class="project-card">
               <div class="card-tag">SystemVerilog • FPGA</div>
-              <h3>32-bit Multi-Cycle CPU</h3>
+              <h3>Custom CPU</h3>
               <p>
-                A custom multi-cycle CPU with Harvard-style memory, control FSM,
-                arithmetic and branching support, and board-level bring-up on
-                FPGA.
+                A multi-cycle CPU built from scratch with custom control,
+                datapath design, instruction support, and FPGA validation.
               </p>
-              <a href="#contact">Add case study</a>
+              <div class="project-links">
+                <a
+                  href="https://docs.google.com/presentation/d/11VwIKEyVeh_dGXQDwxvFSNPMsIY0EbLAxDxgkNIYJq4/edit?slide=id.g3d392737bb1_1_84#slide=id.g3d392737bb1_1_84"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Design + Verification</a
+                >
+                <a
+                  href="https://github.com/RSoleym/multicycle_mips_custom_cpu"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub Repo</a
+                >
+              </div>
             </article>
 
             <article class="project-card">
               <div class="card-tag">UVM • Verification</div>
               <h3>FPGA Stopwatch</h3>
               <p>
-                A stopwatch built with debounced inputs, modular RTL blocks, and
-                structured verification to validate counter and display
-                behaviour.
+                A stopwatch with debounced inputs, modular RTL blocks, and a
+                structured verification flow for the counter and display logic.
               </p>
-              <a href="#contact">Add case study</a>
+              <div class="project-links">
+                <a
+                  href="https://docs.google.com/presentation/d/1rQfCidbTd4oR3LDAykFr8XjBITCOvkiDBzoU8y89S7w/edit"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Design + Verification</a
+                >
+                <a
+                  href="https://github.com/RSoleym/fpga-stopwatch-basys3"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub Repo</a
+                >
+              </div>
             </article>
 
             <article class="project-card">
               <div class="card-tag">Embedded C/C++</div>
-              <h3>Embedded Media Centre</h3>
+              <h3>Media Centre</h3>
               <p>
-                A Cortex-M3 project featuring an LCD UI, media controls, and
-                interactive games, with an emphasis on embedded system design and
-                user interaction.
+                An embedded Cortex-M3 project with an LCD interface, media
+                controls, and joystick-driven games built around clear system
+                structure.
               </p>
-              <a href="#contact">Add case study</a>
+              <div class="project-links">
+                <a
+                  href="https://docs.google.com/presentation/d/1GNQaPY8K37WHM2lhMKdlsnC8Sw-ciYtW-inkpWtePw8/edit"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Design + Verification</a
+                >
+                <a
+                  href="https://github.com/RSoleym/Advance-Media-Center"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub Repo</a
+                >
+              </div>
             </article>
 
             <article class="project-card">
-              <div class="card-tag">Full-Stack</div>
-              <h3>AI Role Matcher</h3>
+              <div class="card-tag">AI Search • Full-Stack</div>
+              <h3>Role Matcher</h3>
               <p>
-                A resume-to-job matching platform that combines OCR, filtering,
-                vector similarity, and a cloud-based workflow for searching and
-                ranking roles.
+                A resume-to-job platform that combines OCR, filtering, vector
+                similarity, and cloud-backed search for stronger job matching.
               </p>
-              <a href="#contact">Add case study</a>
+              <div class="project-links">
+                <a
+                  href="https://docs.google.com/presentation/d/1rDecOIq5hMpRb4sIK5qnlG5MpmDckIs1rDE2ILt03Q4/edit"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Design + Verification</a
+                >
+                <a
+                  href="https://github.com/RSoleym/resume-match-ai-platform"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub Repo</a
+                >
+              </div>
             </article>
           </div>
         </div>
@@ -183,7 +228,7 @@
         <div class="container fade-in-up">
           <div class="section-heading">
             <p class="eyebrow">Accomplishments</p>
-            <h2>Work and project milestones worth highlighting.</h2>
+            <h2>A few highlights.</h2>
           </div>
 
           <div class="card-grid accomplishments-grid">
@@ -191,31 +236,47 @@
               <h3>Hydro One Co-op</h3>
               <p>
                 Supported engineering work, coordination, and technical tracking
-                while contributing to a fast-moving utility environment.
+                in a fast-moving utility environment.
               </p>
             </article>
 
             <article class="info-card">
-              <h3>Technical Reporting</h3>
+              <h3>Work + Study</h3>
               <p>
-                Wrote a 20-page IEEE-style report analysing design, safety, cost,
-                and grounding tradeoffs for solar farm placement near HV lines.
+                Balanced part-time work with final-year engineering studies while
+                continuing to build technical projects.
               </p>
             </article>
 
             <article class="info-card">
               <h3>Timing Closure</h3>
               <p>
-                Iterated on RTL and implementation decisions to move hardware
-                designs toward stable FPGA timing and cleaner integration.
+                Iterated on RTL and implementation choices to move designs
+                toward cleaner FPGA timing and more stable bring-up.
               </p>
             </article>
 
             <article class="info-card">
-              <h3>Verification Focus</h3>
+              <h3>UVM Verification</h3>
               <p>
-                Used structured testbenches, assertions, and debugging to build
-                confidence in functional correctness before hardware deployment.
+                Built UVM components and structured verification flows to check
+                functionality more thoroughly before deployment.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>CPU Design</h3>
+              <p>
+                Designed a configurable CPU from scratch, shaping the datapath,
+                control logic, instruction support, and hardware validation flow.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Dean’s List</h3>
+              <p>
+                Earned the Fall 2025 Dean’s List in the Faculty of Engineering
+                and Architectural Science during final year.
               </p>
             </article>
           </div>
@@ -228,18 +289,19 @@
             <p class="eyebrow">Contact</p>
             <h2>Let’s connect.</h2>
             <p>
-              Replace the contact details below with your final public links. The
-              GitHub link is already set, and the LinkedIn icon in the header is
-              ready for your profile URL.
+              I am open to new graduate opportunities in RTL design,
+              verification, and FPGA-focused hardware roles.
             </p>
           </div>
 
           <div class="contact-links">
             <a href="mailto:soleymani.ramtin@gmail.com">soleymani.ramtin@gmail.com</a>
+            <a href="https://www.linkedin.com/in/ramtin-soleymani/" target="_blank" rel="noreferrer"
+              >linkedin.com/in/ramtin-soleymani</a
+            >
             <a href="https://github.com/RSoleym" target="_blank" rel="noreferrer"
               >github.com/RSoleym</a
             >
-            <a href="#top">Back to top</a>
           </div>
         </div>
       </section>
@@ -248,7 +310,7 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>© <span id="year"></span> Ramtin Soleymani</p>
-        <p>Built with HTML, CSS, and vanilla JavaScript.</p>
+        <p>RTL • Verification • FPGA</p>
       </div>
     </footer>
 

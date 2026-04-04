@@ -104,7 +104,7 @@ a {
 .site-nav a:hover,
 .header-actions a:hover,
 .contact-links a:hover,
-.project-card a:hover {
+.project-links a:hover {
   color: var(--text);
 }
 
@@ -220,11 +220,21 @@ a {
 }
 
 .hero-image-card {
+  max-width: 470px;
+  width: 100%;
+  aspect-ratio: 4 / 5;
   border-radius: 0;
   overflow: hidden;
   box-shadow: var(--shadow);
   background: linear-gradient(135deg, rgba(196, 197, 186, 0.14), rgba(255, 255, 255, 0.02));
   border: 1px solid var(--border);
+}
+
+.hero-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
 }
 
 .hero-copy {
@@ -337,10 +347,16 @@ p {
 .project-card p,
 .info-card p {
   margin-top: 12px;
-  margin-bottom: 18px;
 }
 
-.project-card a {
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.project-links a {
   color: var(--accent-strong);
   font-weight: 600;
 }
@@ -439,6 +455,10 @@ p {
   .hero-grid {
     min-height: unset;
     padding-bottom: 10px;
+  }
+
+  .hero-image-card {
+    max-width: 440px;
   }
 
   h1 {
