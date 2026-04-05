@@ -345,6 +345,21 @@ p {
   font-weight: 600;
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 28px;
+  align-items: center;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.2em;
+}
+
 .contact-panel {
   padding: 32px;
   display: grid;
@@ -355,12 +370,34 @@ p {
 
 .contact-links {
   display: grid;
-  gap: 12px;
+  gap: 18px;
 }
 
 .contact-links a {
   color: var(--muted);
   word-break: break-word;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.contact-icon {
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-strong);
+}
+
+.contact-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
 }
 
 .site-footer {
@@ -480,6 +517,10 @@ p {
     padding: 22px;
   }
 
+  .contact-link {
+    align-items: flex-start;
+  }
+
   p,
   .hero-text {
     font-size: 1rem;
@@ -496,7 +537,7 @@ p {
   border-radius: 16px;
   border: 1px solid rgba(196, 197, 186, 0.2);
   background: transparent;
-  color: var(--text-primary);
+  color: var(--text);
   font-weight: 600;
   transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
 }
@@ -528,7 +569,7 @@ p {
 .resume-page-text {
   max-width: 640px;
   margin: 0;
-  color: var(--text-secondary);
+  color: var(--muted);
 }
 
 .resume-page-actions {
