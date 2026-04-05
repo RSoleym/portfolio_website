@@ -19,26 +19,46 @@
 
     <main class="section">
       <div class="container">
-        <div class="contact-panel" style="max-width: 860px; margin: 48px auto 0;">
-          <div>
-            <p class="eyebrow">Resume</p>
-            <h1 style="font-size: clamp(2.2rem, 5vw, 3.6rem); margin-bottom: 16px;">
-              Resume placeholder page
-            </h1>
-            <p>
-              This page keeps the Resume button working right away. When your PDF is ready,
-              either replace this file with a direct PDF link or upload your resume and point
-              the button in <strong>index.html</strong> to it.
-            </p>
+        <div class="resume-page fade-in-up">
+          <div class="resume-page-header">
+            <div>
+              <p class="eyebrow">Resume</p>
+              <h1>Ramtin Soleymani</h1>
+              <p class="resume-page-text">
+                View the latest resume below or open the PDF directly.
+              </p>
+            </div>
+
+            <div class="resume-page-actions">
+              <a class="secondary-button" href="index.html">Back to Portfolio</a>
+              <a
+                class="secondary-button"
+                href="https://docs.google.com/presentation/d/1B1_I_1rjufx2wcc4LZVx0zSEPcxCHrjRnryf3P1ctQI/edit?slide=id.g3dd44ab51c0_3_8#slide=id.g3dd44ab51c0_3_8"
+                target="_blank"
+                rel="noreferrer"
+                >Project Deck</a
+              >
+              <a
+                class="primary-button"
+                href="assets/ramtin-soleymani-resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                >Open PDF</a
+              >
+            </div>
           </div>
 
-          <div class="contact-links">
-            <a href="index.html">Back to portfolio</a>
-            <a href="mailto:soleymani.ramtin@gmail.com">soleymani.ramtin@gmail.com</a>
-            <a href="https://github.com/RSoleym" target="_blank" rel="noreferrer">github.com/RSoleym</a>
+          <div class="resume-viewer-wrap">
+            <iframe
+              class="resume-viewer"
+              src="assets/ramtin-soleymani-resume.pdf"
+              title="Ramtin Soleymani Resume"
+            ></iframe>
           </div>
         </div>
       </div>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
