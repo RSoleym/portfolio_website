@@ -6,7 +6,7 @@
     <title>Ramtin Soleymani | Portfolio</title>
     <meta
       name="description"
-      content="Portfolio website for Ramtin Soleymani featuring ASIC, RTL, FPGA, DV, and computer architecture projects."
+      content="Ramtin Soleymani's electrical engineering portfolio featuring RTL, FPGA, CDC, design verification, CPU, and Network-on-Chip projects."
     />
     <meta name="theme-color" content="#C4C5BA" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -97,7 +97,9 @@
             <p class="eyebrow">Portfolio</p>
             <h1>My name is Ramtin Soleymani.</h1>
             <p class="hero-text">
-              I’m an Electrical Engineering student focused on ASIC Design, RTL Design, FPGA Testing, and Design Verification.
+              I’m an Electrical Engineering graduate focused on RTL design,
+              FPGA development, clock-domain crossing, design verification,
+              and computer architecture.
             </p>
             <div class="hero-buttons">
               <a class="primary-button" href="#contact">Contact Me</a>
@@ -116,11 +118,34 @@
 
           <div class="card-grid projects-grid">
             <article class="project-card featured-project">
+              <div class="card-tag">SystemC • NoC • Self-Checking Verification</div>
+              <h3>Network-on-Chip Interconnect</h3>
+              <p>
+                Modelled and verified a 4×4 SystemC Network-on-Chip with 16
+                wormhole-routed nodes across mesh and torus topologies. All
+                four test configurations completed without routing errors or
+                deadlocks across 384 packets and 1,920 flits; torus wraparound
+                links improved uniform-traffic latency from 25.62 ns to 25.14 ns.
+              </p>
+              <div class="project-links">
+                <a
+                  href="assets/systemc-network-on-chip-engineering-report.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Engineering Report</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card featured-project">
               <div class="card-tag">CDC • UVM • VGA</div>
               <h3>FPGA Camera Pipeline</h3>
               <p>
-                An OV7670-to-VGA FPGA camera pipeline with async FIFO CDC,
-                tear management, framebuffer display, and UVM architecture comparison.
+                Designed and verified a 320×240 OV7670 camera-to-VGA pipeline
+                in SystemVerilog, scaling the display to 640×480. Because the
+                camera pixel clock and VGA display clock run independently, I
+                used an asynchronous FIFO with Gray-coded CDC pointers for safe,
+                stable pixel transfer between the two timing domains.
               </p>
               <div class="project-links">
                 <a
@@ -143,7 +168,8 @@
               <h3>Custom CPU</h3>
               <p>
                 A multi-cycle CPU built from scratch with custom control,
-                datapath design, instruction sets, and verificaiton methods.
+                datapath design, a 19-state FSM, and structured verification.
+                The design closes timing at 100 MHz with +3.275 ns WNS.
               </p>
               <div class="project-links">
                 <a
@@ -248,62 +274,72 @@
 
           <div class="card-grid accomplishments-grid">
             <article class="info-card">
-              <h3>FPGA Camera Pipeline</h3>
+              <h3>Clock-Domain Crossing (CDC)</h3>
               <p>
-                Built an OV7670-to-VGA pipeline with async FIFO CDC and UVM
-                comparison testing, reducing measured tear severity by 32.91%.
+                The OV7670 camera sensor produces pixels on its own pixel clock,
+                while VGA consumes them on a separate display clock. I bridged
+                those asynchronous timing domains with a dual-clock FIFO and
+                Gray-coded read/write pointers, synchronizing control state
+                safely and reducing metastability risk.
               </p>
             </article>
 
             <article class="info-card">
               <h3>Hydro One Co-op</h3>
               <p>
-                Supported engineering work, coordination, and technical tracking
-                in a fast-moving utility environment.
+                Investigated recurring 115 kV and 230 kV transmission faults,
+                validated 500 kV line safety margins in PLS-CADD, and automated
+                recurring Excel status reports with Python and Power Automate.
               </p>
             </article>
 
             <article class="info-card">
-              <h3>Part-Time Intern + Full Time Student</h3>
+              <h3>Part-Time Intern + Full-Time Student</h3>
               <p>
-                Balanced an electrical design engineering internship throughout my 
-		electrical engineering studies while continuing to build technical projects.
+                Balanced an electrical design engineering internship with a
+                full engineering course load while continuing to deliver
+                technical projects and client work.
               </p>
             </article>
 
             <article class="info-card">
               <h3>Timing Closure</h3>
               <p>
-                Modified the design, so that the project at hand could fit in the
-		100 MHz Clock Cycle of my FPGA.
+                Restructured my CPU’s FSM by one cycle to improve worst negative
+                slack from -0.742 ns to +3.275 ns and close timing at 100 MHz.
               </p>
             </article>
 
             <article class="info-card">
               <h3>UVM Verification</h3>
               <p>
-                Built UVM components and standard verification flows to verify
-		design more thoroughly before deployment.
+                Built UVM scoreboards and comparison flows to verify camera
+                pipeline architectures before FPGA deployment.
               </p>
             </article>
 
             <article class="info-card">
               <h3>CPU Design</h3>
               <p>
-                Designed a multi-cycle CPU from scratch, giving me a great understanding
-		of RTL Design, Design Verification, and Computer Architecture.
+                Architected a 32-bit multi-cycle SystemVerilog CPU with Harvard
+                architecture and a 19-state controller, then verified 30+
+                instructions in waveform simulation.
               </p>
             </article>
 
             <article class="info-card">
-              <h3>Dean’s List</h3>
+              <h3>Dean’s List — Fall 2025 &amp; Winter 2026</h3>
               <p>
-                Earned the Fall 2025 Dean’s List in the Faculty of Engineering
-                and Architectural Science during final year.
+                Earned Dean’s List recognition in consecutive terms from
+                Toronto Metropolitan University’s Faculty of Engineering and
+                Architectural Science.
               </p>
               <div class="project-links info-links">
-                <a href="assets/deans-list-letter.pdf" target="_blank" rel="noreferrer"
-                  >View Dean’s Letter</a
+                <a href="assets/fall-2025-deans-list-letter.pdf" target="_blank" rel="noreferrer"
+                  >Fall 2025 Letter</a
+                >
+                <a href="assets/winter-2026-deans-list-letter.pdf" target="_blank" rel="noreferrer"
+                  >Winter 2026 Letter</a
                 >
               </div>
             </article>
@@ -317,8 +353,8 @@
             <p class="eyebrow">Contact</p>
             <h2>Let’s connect.</h2>
             <p>
-              I’m open to new graduate opportunities in ASIC design, RTL Design, 
-              Design Verification, and FPGA-focused hardware roles.
+              I’m open to early-career opportunities in ASIC and RTL design,
+              design verification, FPGA development, and digital hardware.
             </p>
           </div>
 

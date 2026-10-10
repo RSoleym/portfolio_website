@@ -1,22 +1,20 @@
-# Personal Portfolio Website
+# Ramtin Soleymani — Hardware Engineering Portfolio
 
-A clean one-page portfolio website built with HTML, CSS, and vanilla JavaScript.
+A responsive portfolio built with HTML, CSS, and vanilla JavaScript. It highlights
+RTL, FPGA, CDC, design verification, computer architecture, and SystemC NoC work.
 
 ## Included pages
 
 - `index.html` — main portfolio page
-- `resume.html` — temporary resume page so the Resume button works immediately
+- `resume.html` — embedded hardware-focused resume with a direct PDF link
 - `styles.css` — all styling
 - `script.js` — mobile navigation, year update, and scroll animations
-- `assets/profile-placeholder.svg` — placeholder portrait image
+- `assets/ramtin-profile.jpg` — profile portrait
+- `assets/ramtin-soleymani-resume.pdf` — current resume
+- `assets/systemc-network-on-chip-engineering-report.pdf` — NoC engineering report
+- `assets/fall-2025-deans-list-letter.pdf` — Fall 2025 Dean's List letter
+- `assets/winter-2026-deans-list-letter.pdf` — Winter 2026 Dean's List letter
 - `assets/favicon.svg` — simple site icon
-
-## Quick edits to make first
-
-1. Replace `assets/profile-placeholder.svg` with your actual photo.
-2. Update the LinkedIn link in `index.html`.
-3. Replace the placeholder project text with your final project summaries and links.
-4. Swap `resume.html` for your real resume flow.
 
 ## How to run locally
 
@@ -30,23 +28,10 @@ python -m http.server 8000
 
 Then open `http://localhost:8000`.
 
-## Suggested deployment
+## Deployment
 
-### GitHub
-
-1. Create a new repository.
-2. Upload all files from this folder to the root of the repo.
-3. Commit and push to `main`.
-
-### Cloudflare Pages
-
-1. Connect your GitHub repository to Cloudflare Pages.
-2. Choose the repository.
-3. Use these settings:
-   - Framework preset: `None`
-   - Build command: leave blank
-   - Build output directory: leave blank
-4. Deploy.
+Pushing to `main` runs `.github/workflows/pages.yml`, which deploys the repository
+to GitHub Pages.
 
 ## Customisation notes
 
@@ -61,7 +46,11 @@ Then open `http://localhost:8000`.
 portfolio_site/
 ├── assets/
 │   ├── favicon.svg
-│   └── profile-placeholder.svg
+│   ├── ramtin-profile.jpg
+│   ├── ramtin-soleymani-resume.pdf
+│   ├── systemc-network-on-chip-engineering-report.pdf
+│   ├── fall-2025-deans-list-letter.pdf
+│   └── winter-2026-deans-list-letter.pdf
 ├── index.html
 ├── README.md
 ├── resume.html
