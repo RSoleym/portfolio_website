@@ -121,11 +121,10 @@
               <div class="card-tag">SystemC • NoC • Self-Checking Verification</div>
               <h3>Network-on-Chip Interconnect</h3>
               <p>
-                Modelled and verified a 4×4 SystemC Network-on-Chip with 16
-                wormhole-routed nodes across mesh and torus topologies. All
-                four test configurations completed without routing errors or
-                deadlocks across 384 packets and 1,920 flits; torus wraparound
-                links improved uniform-traffic latency from 25.62 ns to 25.14 ns.
+                Built and verified a 4×4 SystemC Network-on-Chip with 16
+                wormhole-routed nodes across mesh and torus topologies. Torus
+                wraparound links reduced uniform-traffic latency from 25.62 ns
+                to 25.14 ns.
               </p>
               <div class="project-links">
                 <a
@@ -134,6 +133,12 @@
                   rel="noreferrer"
                   >Engineering Report</a
                 >
+                <a
+                  href="https://github.com/RSoleym/network-on-chip"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub Repo</a
+                >
               </div>
             </article>
 
@@ -141,11 +146,10 @@
               <div class="card-tag">CDC • UVM • VGA</div>
               <h3>FPGA Camera Pipeline</h3>
               <p>
-                Designed and verified a 320×240 OV7670 camera-to-VGA pipeline
-                in SystemVerilog, scaling the display to 640×480. Because the
-                camera pixel clock and VGA display clock run independently, I
-                used an asynchronous FIFO with Gray-coded CDC pointers for safe,
-                stable pixel transfer between the two timing domains.
+                Built and verified a SystemVerilog OV7670-to-VGA pipeline that
+                scales 320×240 camera output to 640×480. An asynchronous FIFO
+                with Gray-coded pointers safely bridges the independent camera
+                and display clocks.
               </p>
               <div class="project-links">
                 <a
@@ -276,11 +280,9 @@
             <article class="info-card">
               <h3>Clock-Domain Crossing (CDC)</h3>
               <p>
-                The OV7670 camera sensor produces pixels on its own pixel clock,
-                while VGA consumes them on a separate display clock. I bridged
-                those asynchronous timing domains with a dual-clock FIFO and
-                Gray-coded read/write pointers, synchronizing control state
-                safely and reducing metastability risk.
+                The camera and VGA run on independent clocks, so I used a
+                dual-clock FIFO with Gray-coded pointers to transfer pixels
+                safely and reduce metastability risk.
               </p>
             </article>
 
