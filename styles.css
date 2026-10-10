@@ -309,10 +309,6 @@ p {
 }
 
 
-.featured-project {
-  grid-column: span 2;
-}
-
 .accomplishments-grid .info-card:last-child:nth-child(odd) {
   grid-column: span 2;
 }
@@ -482,7 +478,6 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .featured-project,
   .accomplishments-grid .info-card:last-child:nth-child(odd) {
     grid-column: auto;
   }
